@@ -7,6 +7,7 @@ var numbers = [
 ];
 
 var sum= 0;
+var arrayValue;
 
 function print(message) {
   var outputDiv = document.getElementById('output');
@@ -17,6 +18,14 @@ for (var i = 0; i < numbers.length; i ++) {
   sum = numbers[i] + sum;
 }
 
-html = "Hey! the sum of the numbers in the array is " + sum
+numbers.splice(2,0,6);
+
+for (var i = 0; i < numbers.length; i ++) {
+  arrayValue = numbers[i];
+  // html += "array value " + arrayValue;
+  console.log(arrayValue);
+}
+
+html = "Hey! the sum of the numbers in the array is " + sum;
 
 print(html);
