@@ -72,10 +72,12 @@ var editTask = function() {
     //Switch from .editMode
     //label text become the input's value
     label.innerText = editInput.value;
+    this.innerText = "Edit";
   } else {
     //Switch to .editMode
     //input value becomes the label's text
     editInput.value = label.innerText;
+    this.innerText = "Save";
   }
 
   //Toggle .editMode on the list item
