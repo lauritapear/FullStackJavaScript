@@ -1,5 +1,9 @@
 [
   {
+   "name": "Aimee",
+   "inoffice": false
+  },
+  {
    "name": "Amit",
    "inoffice": false
   },
@@ -12,11 +16,7 @@
    "inoffice": true
   },
   {
-   "name": "Dan",
-   "inoffice": true
-  },
-  {
-   "name": "Dave",
+   "name": "Elizabeth",
    "inoffice": true
   },
   {
@@ -32,7 +32,7 @@
    "inoffice": true
   },
   {
-   "name": "Jim",
+   "name": "Lainie",
    "inoffice": true
   },
   {
@@ -41,6 +41,10 @@
   }, 
   {
    "name": "Pasan",
+   "inoffice": true
+  },
+  {
+   "name": "Shawna",
    "inoffice": true
   },
   {
