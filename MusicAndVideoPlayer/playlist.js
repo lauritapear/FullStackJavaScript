@@ -32,15 +32,3 @@ Playlist.prototype.renderInElement = function(list) {
     list.innerHTML += this.songs[i].toHTML();
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
