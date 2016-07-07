@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var maps = require('gulp-sourcemaps');
-
+var del = require('del');
 
 gulp.task("concatScripts", function(){
   console.log("hello!!");
@@ -36,6 +36,24 @@ gulp.task("compileSass", function()
   .pipe(gulp.dest('css'));
 });
 
-gulp.task("build", [ 'minifyScripts', 'compileSass' ]);
+gulp.task("watchFiles", function()
+{
+ gulp.watch('scss/**/*.scss', ['compileSass']);
+ gulp.watch('js/main.js', ['concatScripts']);
+});
 
-gulp.task("default", ['build']);
+gulp.task("clean", function(){
+  del(['dist','css/application.css', 'js/app.*.js'] );
+});
+
+gulp.task("build", [ 'minifyScripts', 'compileSass'], function(){
+  return gulp.src(["css/application.css", "js/app.min.js","index.html", "img/**", "fonts/**"],
+  {base: './'})
+  .pipe(gulp.dest('dist'));
+});
+
+gulp.task("serve", ['watchFiles']);
+
+gulp.task("default", ['clean'], function(){
+  gulp.start('build');
+});
