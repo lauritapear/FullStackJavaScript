@@ -19,9 +19,9 @@ gulp.task("concatScripts", function(){
 .pipe(gulp.dest("js"));
 });
 
-gulp.task("minifyScripts", function()
+gulp.task("minifyScripts", ["concatScripts"], function()
 {
-  gulp.src("js/app.js")
+  return gulp.src("js/app.js")
   .pipe(uglify())
   .pipe(rename('app.min.js'))
   .pipe(gulp.dest('js'));
@@ -29,14 +29,13 @@ gulp.task("minifyScripts", function()
 
 gulp.task("compileSass", function()
 {
-  gulp.src("css/application.scss")
+  return gulp.src("css/application.scss")
   .pipe(maps.init())
   .pipe(sass())
   .pipe(maps.write('./'))
   .pipe(gulp.dest('css'));
 });
 
-gulp.task("default", ["hello"], function()
-{
-  console.log("this is the default task");
-})
+gulp.task("build", [ 'minifyScripts', 'compileSass' ]);
+
+gulp.task("default", ['build']);
