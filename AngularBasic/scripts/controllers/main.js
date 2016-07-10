@@ -3,7 +3,7 @@ angular.module('todoListApp')
 .controller("mainCtrl", function($scope, dataService) {
         $scope.addTodo = function () {
           var todo = {name:"This is a new todo"};
-          $scope.todos.push(todo);
+          $scope.todos.unshift(todo);
   };
 
         $scope.helloConsole = dataService.helloConsole;
@@ -22,5 +22,5 @@ angular.module('todoListApp')
             $scope.todos.splice(index, 1);
         };
 
-        $scope.saveTodo = dataService.saveTodo;
+        $scope.saveTodos = dataService.saveTodos;
     })
