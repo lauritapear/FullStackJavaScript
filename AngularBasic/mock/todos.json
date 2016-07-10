@@ -1,8 +1,8 @@
 [
-  {"name": "Clean the house"},
-  {"name": "Water the dog"},
-  {"name": "Feed the lawn"},
-  {"name": "Pay the bills"},
-  {"name": "Run"},
-  {"name": "Swim"}
+  {"name": "clean the house"},
+  {"name": "water the dog"},
+  {"name": "feed the lawn"},
+  {"name": "pay them bills"},
+  {"name": "run"},
+  {"name": "swim"}
 ]
