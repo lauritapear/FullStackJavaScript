@@ -1,0 +1,138 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'mongo-hacker' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData mongo-hacker
+8 silly fetchNamedPackageData mongo-hacker
+9 silly mapToRegistry name mongo-hacker
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'mongo-hacker',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'mongo-hacker',
+12 silly mapToRegistry   name: 'mongo-hacker',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+14 verbose request uri https://registry.npmjs.org/mongo-hacker
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:24:05 PM
+17 verbose request id afeb04b51dc1eb19
+18 verbose etag "1AY8N4KYZ7PA48GO6FYKNELRM"
+19 http request GET https://registry.npmjs.org/mongo-hacker
+20 http 304 https://registry.npmjs.org/mongo-hacker
+21 verbose headers { date: 'Mon, 11 Jul 2016 01:24:05 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"1AY8N4KYZ7PA48GO6FYKNELRM"',
+21 verbose headers   age: '185',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-ord1745-ORD',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1468200245.888779,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Mon, 11 Jul 2016 01:24:05 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"1AY8N4KYZ7PA48GO6FYKNELRM"',
+22 silly get     age: '185',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ord1745-ORD',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1468200245.888779,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/mongo-hacker from cache
+24 verbose get saving mongo-hacker to /Users/lauraartunduaga/.npm/registry.npmjs.org/mongo-hacker/.cache.json
+25 verbose correctMkdir /Users/lauraartunduaga/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule mongo-hacker@0.0.13 checking installable status
+39 silly cache add args [ 'mongo-hacker', null ]
+40 verbose cache add spec mongo-hacker
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'mongo-hacker',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'mongo-hacker',
+41 silly cache add   name: 'mongo-hacker',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed mongo-hacker@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for mongo-hacker
+44 info addNameTag [ 'mongo-hacker', 'latest' ]
+45 silly mapToRegistry name mongo-hacker
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'mongo-hacker',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'mongo-hacker',
+48 silly mapToRegistry   name: 'mongo-hacker',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/mongo-hacker
+50 verbose addNameTag registry:https://registry.npmjs.org/mongo-hacker not in flight; fetching
+51 verbose get https://registry.npmjs.org/mongo-hacker not expired, no request
+52 silly addNameTag next cb for mongo-hacker with tag latest
+53 silly addNamed mongo-hacker@0.0.13
+54 verbose addNamed "0.0.13" is a plain semver version for mongo-hacker
+55 silly cache afterAdd mongo-hacker@0.0.13
+56 verbose afterAdd /Users/lauraartunduaga/.npm/mongo-hacker/0.0.13/package/package.json not in flight; writing
+57 verbose correctMkdir /Users/lauraartunduaga/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /Users/lauraartunduaga/.npm/mongo-hacker/0.0.13/package/package.json written
+59 silly loadAllDepsIntoIdealTree Finishing
+60 silly loadIdealTree Finishing
+61 silly currentTree lib
+62 silly idealTree lib
+62 silly idealTree └── mongo-hacker@0.0.13
+63 silly generateActionsToTake Starting
+64 silly install generateActionsToTake
+65 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+66 silly rollbackFailedOptional Starting
+67 silly rollbackFailedOptional Finishing
+68 silly runTopLevelLifecycles Starting
+69 silly runTopLevelLifecycles Finishing
+70 silly install printInstalled
+71 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+71 verbose stack     at Error (native)
+72 verbose cwd /Users/lauraartunduaga/Documents/CodeLouisville/FullStackJavaScript/treehouse-mongo-basics-master
+73 error Darwin 14.5.0
+74 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "mongo-hacker"
+75 error node v4.4.5
+76 error npm  v3.10.5
+77 error path /usr/local/lib/node_modules
+78 error code EACCES
+79 error errno -13
+80 error syscall access
+81 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+81 error     at Error (native)
+81 error  { [Error: EACCES: permission denied, access '/usr/local/lib/node_modules']
+81 error   errno: -13,
+81 error   code: 'EACCES',
+81 error   syscall: 'access',
+81 error   path: '/usr/local/lib/node_modules' }
+82 error Please try running this command again as root/Administrator.
+83 verbose exit [ -13, true ]

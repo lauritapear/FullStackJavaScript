@@ -1,0 +1,11 @@
+{
+  "name": "treehouse-mongo-basics-master",
+  "version": "1.0.0",
+  "description": "``` # open the mongo shell mongo # switch to your db, for example  \"mongoBasics\" > use mongoBasics # load the seed.js file > load('./path/to/seed.js') # check out the data you have! > db.getCollectionNames() ```",
+  "main": "seed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
