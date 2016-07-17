@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+  <link rel="stylesheet" href="styles/CssPrueba.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+</head>
+
+<body ng-app="mainModule">
+  <div ng-controller="submitController">
+    <h2>Video Upload</h2>
+    <hr class="colored">
+    <form name="personForm" method="post" novalidate>
+      <label for="firstNameEdit">First name:</label>
+      <input id="firstNameEdit" type="text" name="firstName" ng-model="customer.firstName" required /><br />
+      <label for="lastNameEdit">Last name:</label>
+      <input id="lastNameEdit" type="text" name="lastName" ng-model="customer.lastName" required /><br />
+      <label for="className">Class:</label>
+      <input id="className" type="text" name="className" ng-model="customer.className" required /><br />
+      <label for="university">School/University:</label>
+      <input id="university" type="text" name="university" ng-model="customer.university" required /><br />
+      <label for="video">Video:</label>
+      <!-- <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label> -->
+      <input type="file" id="video"  name="files[]" multiple ng-model="customer.video" >
+      <!-- <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple ng-disabled="disabled" ng-model="person.video" required/> -->
+      <!-- <input id="video" type="text" name="video" ng-model="person1.video" required /><br /> -->
+      <!-- <span class="btn btn-success fileinput-button" ng-class="{disabled: disabled}"> -->
+          <!-- <i class="glyphicon glyphicon-plus"></i> -->
+          <!-- <input type="file" name="files[]" multiple ng-disabled="disabled" ng-model="person.video" required> -->
+      <!-- </span> -->
+      <br />
+      <label for="videoTitle">Video Title:</label>
+      <input id="videoTitle" type="text" name="videoTitle" ng-model="customer.videoTitle" required /><br />
+      <label for="videoDescription">Video Description:</label>
+      <textarea id="videoDescription" type="text" name="videoDescription" ng-model="customer.videoDescription" required /></textarea>
+      <br />
+      <button type="submit"
+              ng-disabled="personForm.$invalid" ng-click="submitData()">Submit</button>
+    </form>
+
+  </div>
+{{customer}}
+  <!-- <script src="vendor/angular.js"></script>
+  <script src="script.js"></script> -->
+
+  <!-- <script src="vendor/angular.js" type="text/javascript"></script>
+  <script src="scripts/app.js" type="text/javascript"></script>
+  <script src="scripts/controllers/main.js" type="text/javascript"></script>
+  <script src="scripts/services/data.js" type="text/javascript"></script>
+  <script src="scripts/directives/videoUpload.js" type="text/javascript"></script> -->
+  <script src="vendor/angular.js"></script>
+  <script src="../app/app.js"></script>
+  <script src="../app/scripts/controllers/main.js"></script>
+  <!-- <script src="/scripts/controllers/todo.js"></script> -->
+  <script src="../app/scripts/services/data.js"></script>
+  <script src="../app/scripts/directives/videoUpload.js"></script>
+</body>
+</html>
