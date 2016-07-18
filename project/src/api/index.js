@@ -6,12 +6,13 @@ var Todo = require('../models/todo');
 var router = express.Router();
 
 router.get('/todos', function(req, res) {
-  Todo.find({}, function(err, todos) {
-    if (err) {
-      return res.status(500).json({ message: err.message });
-    }
-    res.json({ todos: todos });
-  });
+  cosole.log("wooho")
+  // Todo.find({}, function(err, todos) {
+  //   if (err) {
+  //     return res.status(500).json({ message: err.message });
+  //   }
+  //   res.json({ todos: todos });
+  // });
 });
 
 router.post('/todos', function(req, res) {
