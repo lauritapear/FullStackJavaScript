@@ -10,7 +10,7 @@
   <div ng-controller="submitController">
     <h2>Video Upload</h2>
     <hr class="colored">
-    <form name="personForm" method="post" novalidate>
+    <form name="personForm" action="http://127.0.0.1:3000/upload" method="GET" novalidate >
       <label for="firstNameEdit">First name:</label>
       <input id="firstNameEdit" type="text" name="firstName" ng-model="customer.firstName" required /><br />
       <label for="lastNameEdit">Last name:</label>
@@ -35,7 +35,9 @@
       <textarea id="videoDescription" type="text" name="videoDescription" ng-model="customer.videoDescription" required /></textarea>
       <br />
       <button type="submit"
-              ng-disabled="personForm.$invalid" ng-click="submitData()">Submit</button>
+              ng-disabled="personForm.$invalid">Submit</button>
+      <!-- <button type="submit"
+              ng-disabled="personForm.$invalid" ng-click="submitData()">Submit</button> -->
     </form>
 
   </div>

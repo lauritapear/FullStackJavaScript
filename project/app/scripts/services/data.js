@@ -1,3 +1,4 @@
+'use strict';
 angular.module('mainModule')
 .service('multipartForm', ['$http', function($http){
 	this.post = function(uploadUrl, data){
@@ -9,4 +10,4 @@ angular.module('mainModule')
 			headers: { 'Content-Type': undefined }
 		});
 	}
-}])
+}]);
